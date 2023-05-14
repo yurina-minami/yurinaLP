@@ -1,0 +1,243 @@
+body {
+  background-color: #5e9fc7;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: "Limelight", cursive;
+}
+
+/*---------header---------*/
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.hamburger {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  padding: 10px;
+  z-index: 50;
+  transition: 1s;
+}
+.hamburger span {
+  width: 50px;
+  height: 3px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: whitesmoke;
+  transition: 1s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  margin-top: 10px;
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -24px;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+  font-family: "Limelight", cursive;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+nav.active {
+  display: block;
+}
+nav .looptext {
+  display: flex;
+  font-size: 1.5rem;
+}
+nav .looptext.bottom {
+  position: absolute;
+  bottom: 0;
+}
+nav .looptext .loop1 {
+  animation: loop1 50s -25s linear infinite;
+}
+nav .looptext .loop2 {
+  animation: loop2 50s linear infinite;
+}
+nav h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+nav ul {
+  padding: 50px 100px;
+}
+nav li {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+@keyframes loop1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+/*---------mv---------*/
+.mv h1 {
+  font-family: "Limelight", cursive;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 140px;
+}
+.mv .mv-img {
+  width: 80%;
+  height: 550px;
+  margin-left: 10%;
+  margin-top: -120px;
+  border-radius: 200px 200px 0 0;
+  background-image: url(/img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/*--------about---------*/
+#about {
+  padding-top: 100px;
+}
+#about h2 {
+  color: #367ba6;
+}
+#about p {
+  margin-top: 20px;
+}
+
+/*-------service--------*/
+.white-bg-top {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background-image: url(/img/white-bg-top.png);
+  background-size: cover;
+}
+
+.white-bg-bottom {
+  width: 100%;
+  height: 150px;
+  background-image: url(/img/white-bg-bottom.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#service {
+  background-color: white;
+  color: #5e9fc7;
+}
+#service h2 {
+  text-align: center;
+}
+#service ul {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+#service ul li {
+  line-height: 2;
+}
+#service ul li img {
+  width: 120px;
+}
+#service ::-webkit-scrollbar {
+  display: none;
+}
+
+/*------price-------*/
+#price {
+  padding-top: 100px;
+}
+#price h2 {
+  color: #367ba6;
+}
+#price p {
+  margin-top: 20px;
+}
+#price li {
+  list-style: none;
+  margin-top: 80px;
+}
+#price li h3 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+#price li p {
+  margin: 0;
+}
+#price li .price {
+  border: solid 1px white;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/*--------contact----------*/
+#contact {
+  padding-top: 150px;
+}
+#contact h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+#contact p {
+  margin-top: 20px;
+}
+#contact .icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#contact .icons img {
+  width: 50px;
+}
+#contact .mail {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+#contact .blue-bg {
+  width: 90%;
+  margin-left: 5%;
+  height: 400px;
+  background-color: #367ba6;
+  border-radius: 200px 200px 0 0;
+  margin-top: -300px;
+}/*# sourceMappingURL=style.css.map */
