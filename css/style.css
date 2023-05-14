@@ -119,17 +119,14 @@ nav li {
   font-family: "Limelight", cursive;
   font-size: 4rem;
   text-align: center;
-  padding-top: 140px;
+  margin-top: -450px;
+  padding-bottom: 300px;
 }
-.mv .mv-img {
+.mv img {
   width: 80%;
-  height: 550px;
+  height: 600px;
+  padding-top: 150px;
   margin-left: 10%;
-  margin-top: -120px;
-  border-radius: 200px 200px 0 0;
-  background-image: url(/img/mv.png);
-  background-size: cover;
-  background-position: center;
 }
 
 /*--------about---------*/
@@ -144,20 +141,17 @@ nav li {
 }
 
 /*-------service--------*/
-.white-bg-top {
+.white-bg-top img {
   width: 100%;
   height: 200px;
   margin-top: 50px;
-  background-image: url(/img/white-bg-top.png);
-  background-size: cover;
+  margin-bottom: -10px;
 }
 
-.white-bg-bottom {
+.white-bg-bottom img {
   width: 100%;
   height: 150px;
-  background-image: url(/img/white-bg-bottom.png);
-  background-size: cover;
-  background-position: bottom;
+  margin-top: -1px;
 }
 
 #service {
