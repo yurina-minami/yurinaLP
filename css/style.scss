@@ -4,7 +4,7 @@ body {
 }
 
 .bg {
-    background-color: #5e9fc7;
+  background-color: #5e9fc7;
 }
 
 a {
@@ -12,11 +12,15 @@ a {
 }
 
 li {
-    list-style: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 .wrapper {
-  max-width: 500px;
+  max-width: 375px;
   margin: auto;
   padding: 0 50px;
 }
@@ -28,8 +32,8 @@ h2 {
 
 /*---------header---------*/
 header {
-    width: 100%;
-    position: fixed;
+  width: 100%;
+  position: fixed;
 }
 
 .hamburger {
@@ -130,6 +134,57 @@ nav {
   }
 }
 
+/*---------loading---------*/
+.top-op {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 45vh 0 0 30%;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 100;
+  background: #367ba6;
+  animation-duration: 3s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  animation-name: top-op;
+
+  font-size: 3rem;
+  font-family: "Limelight", cursive;
+}
+
+@keyframes top-op {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  60% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0%;
+    top: 100%;
+  }
+}
+
+.eachTextAnime span {
+  opacity: 0;
+}
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*---------mv---------*/
 .mv {
   h1 {
@@ -164,14 +219,14 @@ nav {
 /*-------service--------*/
 .white-bg-top img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin-top: 50px;
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
 
 .white-bg-bottom img {
   width: 100%;
-  height: 150px;
+  height: 140px;
   margin-top: -1px;
 }
 
@@ -191,21 +246,21 @@ nav {
     overflow-x: scroll;
 
     li {
-        line-height: 2;
+      line-height: 2;
 
-        img {
-            width: 120px;
-        }
+      img {
+        width: 120px;
+      }
     }
   }
 
   ::-webkit-scrollbar {
     display: none;
-}
+  }
 }
 
 /*------price-------*/
-#price {
+#works {
   padding-top: 100px;
 
   h2 {
@@ -218,74 +273,57 @@ nav {
 
   li {
     list-style: none;
-    margin-top: 80px;
-
-    h3 {
-        font-size: 1.8rem;
-        font-weight: lighter;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .price {
-        border:  solid 1px white;
-        padding: 20px;
-        margin-top: 10px;
-        font-size: 1.2rem;
-    }
+    margin-top: 40px;
   }
 }
 
 /*--------contact----------*/
 #contact {
-    padding-top: 150px;
+  padding-top: 150px;
 
-    h2 {
-        font-size: 3.5rem;
-        text-align: center;
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  .icons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: 50px;
     }
+  }
 
-    p {
-        margin-top: 20px;
-    }
+  .mail {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
 
-    .icons {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-
-        img {
-            width: 50px;
-        }
-    }
-
-    .mail {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 0.8rem;
-    }
-
-    .blue-bg {
-        width: 90%;
-        margin-left: 5%;
-        height: 400px;
-        background-color: #367ba6;
-        border-radius: 200px 200px 0 0;
-        margin-top: -300px;
-    }
+  .blue-bg {
+    width: 90%;
+    margin-left: 5%;
+    height: 400px;
+    background-color: #367ba6;
+    border-radius: 200px 200px 0 0;
+    margin-top: -300px;
+  }
 }
 
+@media screen and (min-width: 375px) {
+  body {
+    background-color: #367ba6;
+  }
 
-@media screen and (min-width: 500px) {
-    body {
-        background-color: #367ba6;
-    }
-
-    .bg {
-        width: 500px;
-        margin: auto;
-    }
+  .bg {
+    width: 375px;
+    margin: auto;
+  }
 }
